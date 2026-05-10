@@ -1,0 +1,22 @@
+# Adaptive TiFL — Federated Learning Project
+# Category 7: System Heterogeneity
+# Install: pip install -r requirements.txt
+
+# ── Federated Learning Framework ─────────────────────────────
+flwr==1.5.0
+
+# ── Deep Learning ─────────────────────────────────────────────
+torch==2.1.0
+torchvision==0.16.0
+
+# ── Data / Numerics ───────────────────────────────────────────
+numpy==1.24.4
+
+# ── Plotting ──────────────────────────────────────────────────
+matplotlib==3.7.2
+
+# ── Data Handling / Tables ────────────────────────────────────
+pandas==2.0.3
+
+# ── Config File Parsing ───────────────────────────────────────
+pyyaml==6.0.1

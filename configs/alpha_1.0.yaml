@@ -1,0 +1,60 @@
+# configs/alpha_1.0.yaml
+# Experiment: Adaptive TiFL — Non-IID (α = 1.0)
+
+experiment:
+  name: "adaptive_tifl_alpha_1.0"
+  description: "Tier-based FL under non-IID partitioning (Dirichlet α=1.0)"
+  category: 7  # System Heterogeneity
+
+federation:
+  num_clients: 10
+  num_rounds: 10
+  server_address: "0.0.0.0:8080"
+  strategy: "AdaptiveTiFL"
+
+data:
+  dataset: "MNIST"
+  partitioning: "dirichlet"
+  alpha: 1.0
+  num_classes: 10
+
+model:
+  architecture: "CNN"
+  input_channels: 1
+  conv1_filters: 32
+  conv2_filters: 64
+  fc1_units: 128
+  output_classes: 10
+
+training:
+  local_epochs: 5
+  batch_size: 32
+  optimizer: "SGD"
+  learning_rate: 0.01
+  momentum: 0.9
+
+tiers:
+  fast:
+    client_ids: [0, 1, 2]
+    delay_seconds: 0
+  medium:
+    client_ids: [3, 4, 5]
+    delay_seconds: 3
+  slow:
+    client_ids: [6, 7, 8, 9]
+    delay_seconds: 6
+
+strategy_params:
+  fraction_fit: 1.0
+  fraction_evaluate: 1.0
+  min_fit_clients: 3
+  min_evaluate_clients: 3
+  min_available_clients: 10
+
+output:
+  results_dir: "results/tifl/1.0"
+  metrics:
+    - accuracy.csv
+    - loss.csv
+    - round_time.csv
+    - straggler_ratio.csv

@@ -1,0 +1,12 @@
+/Users/rahulray/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+
+Client 2 | alpha=0.01 | label distribution:
+Traceback (most recent call last):
+  File "/Users/rahulray/Downloads/fl-project_2/src/client.py", line 48, in <module>
+    trainloader = DataLoader(train_dataset, batch_size=32, shuffle=True)
+  File "/Users/rahulray/Library/Python/3.9/lib/python/site-packages/torch/utils/data/dataloader.py", line 350, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/Users/rahulray/Library/Python/3.9/lib/python/site-packages/torch/utils/data/sampler.py", line 143, in __init__
+    raise ValueError(f"num_samples should be a positive integer value, but got num_samples={self.num_samples}")
+ValueError: num_samples should be a positive integer value, but got num_samples=0

@@ -1,0 +1,147 @@
+[92mINFO [0m:      Starting Flower server, config: num_rounds=10, no round_timeout
+[92mINFO [0m:      Flower ECE: gRPC server running (10 rounds), SSL is disabled
+[92mINFO [0m:      [INIT]
+[92mINFO [0m:      Requesting initial parameters from one random client
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1778397947.570637 4820910 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+I0000 00:00:1778397947.577876 4820910 fork_posix.cc:71] Other threads are currently calling into gRPC, skipping fork() handlers
+[92mINFO [0m:      Received initial parameters from one random client
+[92mINFO [0m:      Evaluating initial global parameters
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 1]
+[92mINFO [0m:      configure_fit: strategy sampled 2 clients (out of 2)
+[92mINFO [0m:      aggregate_fit: received 2 results and 0 failures
+[93mWARNING [0m:   No fit_metrics_aggregation_fn provided
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 2]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 3]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 4]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 5]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 6]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 7]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 8]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 9]
+[92mINFO [0m:      configure_fit: strategy sampled 4 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 4 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [ROUND 10]
+[92mINFO [0m:      configure_fit: strategy sampled 3 clients (out of 10)
+[92mINFO [0m:      aggregate_fit: received 3 results and 0 failures
+[92mINFO [0m:      configure_evaluate: strategy sampled 10 clients (out of 10)
+[92mINFO [0m:      aggregate_evaluate: received 10 results and 0 failures
+[92mINFO [0m:      
+[92mINFO [0m:      [SUMMARY]
+[92mINFO [0m:      Run finished 10 rounds in 443.05s
+[92mINFO [0m:      History (loss, distributed):
+[92mINFO [0m:      	('\tround 1: 31.136966705322266\n'
+[92mINFO [0m:      	 '\tround 2: 15.396491050720215\n'
+[92mINFO [0m:      	 '\tround 3: 12.101058006286621\n'
+[92mINFO [0m:      	 '\tround 4: 11.72026538848877\n'
+[92mINFO [0m:      	 '\tround 5: 10.706791877746582\n'
+[92mINFO [0m:      	 '\tround 6: 9.254318237304688\n'
+[92mINFO [0m:      	 '\tround 7: 9.95124626159668\n'
+[92mINFO [0m:      	 '\tround 8: 9.158148765563965\n'
+[92mINFO [0m:      	 '\tround 9: 8.489996910095215\n'
+[92mINFO [0m:      	 '\tround 10: 9.003273010253906\n')History (metrics, distributed, evaluate):
+[92mINFO [0m:      	{'accuracy': [(1, 0.9686),
+[92mINFO [0m:      	              (2, 0.9828),
+[92mINFO [0m:      	              (3, 0.9878),
+[92mINFO [0m:      	              (4, 0.9877),
+[92mINFO [0m:      	              (5, 0.9892),
+[92mINFO [0m:      	              (6, 0.9907),
+[92mINFO [0m:      	              (7, 0.9897),
+[92mINFO [0m:      	              (8, 0.9911),
+[92mINFO [0m:      	              (9, 0.9917),
+[92mINFO [0m:      	              (10, 0.9918)]}
+[92mINFO [0m:      
+
+Server starting | alpha=iid | rounds=10 | out=/Users/rahulray/Downloads/fl-project_2/results/tifl/iid
+
+[Round 1] Tier: FAST | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9686
+  Loss      : 31.1370
+  Round Time: 35.08s
+
+[Round 2] Tier: MEDIUM | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9828
+  Loss      : 15.3965
+  Round Time: 43.16s
+
+[Round 3] Tier: SLOW | alpha=iid | straggler_ratio=1.00
+  Accuracy  : 0.9878
+  Loss      : 12.1011
+  Round Time: 55.31s
+
+[Round 4] Tier: FAST | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9877
+  Loss      : 11.7203
+  Round Time: 40.72s
+
+[Round 5] Tier: MEDIUM | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9892
+  Loss      : 10.7068
+  Round Time: 41.19s
+
+[Round 6] Tier: SLOW | alpha=iid | straggler_ratio=1.00
+  Accuracy  : 0.9907
+  Loss      : 9.2543
+  Round Time: 52.30s
+
+[Round 7] Tier: FAST | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9897
+  Loss      : 9.9512
+  Round Time: 40.54s
+
+[Round 8] Tier: MEDIUM | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9911
+  Loss      : 9.1581
+  Round Time: 44.59s
+
+[Round 9] Tier: SLOW | alpha=iid | straggler_ratio=1.00
+  Accuracy  : 0.9917
+  Loss      : 8.4900
+  Round Time: 49.69s
+
+[Round 10] Tier: FAST | alpha=iid | straggler_ratio=0.00
+  Accuracy  : 0.9918
+  Loss      : 9.0033
+  Round Time: 40.45s

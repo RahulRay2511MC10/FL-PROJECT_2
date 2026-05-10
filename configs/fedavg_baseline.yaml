@@ -1,0 +1,48 @@
+# configs/fedavg_baseline.yaml
+# Experiment: FedAvg Baseline — Non-IID (α = 0.1)
+
+experiment:
+  name: "fedavg_baseline_alpha_0.1"
+  description: "Standard FedAvg baseline under non-IID partitioning (α=0.1)"
+  category: 7  # System Heterogeneity — baseline comparison
+
+federation:
+  num_clients: 10
+  num_rounds: 10
+  server_address: "0.0.0.0:8080"
+  strategy: "FedAvg"
+
+data:
+  dataset: "MNIST"
+  partitioning: "dirichlet"
+  alpha: 0.1
+  num_classes: 10
+
+model:
+  architecture: "CNN"
+  input_channels: 1
+  conv1_filters: 32
+  conv2_filters: 64
+  fc1_units: 128
+  output_classes: 10
+
+training:
+  local_epochs: 5
+  batch_size: 32
+  optimizer: "SGD"
+  learning_rate: 0.01
+  momentum: 0.9
+
+strategy_params:
+  fraction_fit: 1.0
+  fraction_evaluate: 1.0
+  min_fit_clients: 10      # all clients every round (standard FedAvg)
+  min_evaluate_clients: 10
+  min_available_clients: 10
+
+output:
+  results_dir: "results/fedavg"
+  metrics:
+    - accuracy.csv
+    - loss.csv
+    - round_time.csv
