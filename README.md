@@ -15,7 +15,57 @@
 | **Framework** | Flower (flwr) |
 | **Paper 1** | TiFL: A Tier-Based Federated Learning System (Chai et al., HPDC 2020) |
 | **Paper 2** | Hermes: An Efficient Federated Learning Framework for Heterogeneous Mobile Clients (Li et al., MobiCom 2021) |
-| **YouTube** | [Project Demo Video](https://youtube.com/your-link-here) |
+| **YouTube** | [▶ Watch Project Demo](https://www.youtube.com/watch?v=1yMzRhwxCOM) |
+
+---
+
+## 📺 Video Demo
+
+**[▶ Watch on YouTube](https://www.youtube.com/watch?v=1yMzRhwxCOM)**
+
+The video covers:
+1. Repository structure walkthrough
+2. Installation and setup
+3. Code explanation — AdaptiveTiFL strategy
+4. Running all 5 experiments live
+5. Results and plots analysis
+
+
+---
+
+## ⚡ Complete Workflow (Quick Start)
+
+```bash
+# 1. Clone
+git clone https://github.com/RahulRay2511MC10/FL-PROJECT_2.git
+cd FL-PROJECT_2
+
+# 2. Install dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# 3. Run ALL 5 experiments (α = 0.01, 0.1, 0.5, 1.0, IID) — ~30 min total
+python3 src/run_all_alphas.py
+
+# 4. Run FedAvg baseline for comparison
+#    Terminal 1:
+python3 src/server_fedavg.py
+#    Terminal 2:
+for i in {0..9}; do python3 src/client.py --cid $i --alpha 0.1 & sleep 1; done
+
+# 5. Generate all comparison plots
+python3 src/compare_results.py
+
+# 6. Generate summary results table
+python3 src/generate_table.py
+
+# 7. View results
+ls results/tifl/            # one folder per alpha: 0.01  0.1  0.5  1.0  iid
+cat results/tifl/0.1/accuracy.csv
+```
+
+Total runtime: ~30 minutes. All results auto-saved to `results/tifl/<alpha>/`.
 
 ---
 
